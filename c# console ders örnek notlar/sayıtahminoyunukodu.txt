@@ -1,0 +1,26 @@
+Console.WriteLine("sayi tahmin oynu");
+int[,] dizi = new int[3,3];
+Random rnd = new Random();
+for (int i = 0; i < 3; i++)
+{
+for (int j = 0; j < 3; j++)
+{
+Console.WriteLine(i + "." + j +"sayi girin");
+dizi[i, j] = Convert.ToInt32(Console.ReadLine());
+}
+}
+Console.Clear();
+Console.WriteLine("diziye sayilar girildi");
+int deger1 = rnd.Next(0, 3);
+int deger2 = rnd.Next(0, 3);
+Console.WriteLine(deger1 + "." + deger2 + "olan degeri hatirliyormusunuz? 
+simdi sayiyi girin..");
+if (Convert.ToInt32(Console.ReadLine()) == dizi[deger1, deger2])
+{
+Console.WriteLine("dogru");
+}
+else
+{
+Console.WriteLine("yanlis");
+Console.ReadKey();
+}

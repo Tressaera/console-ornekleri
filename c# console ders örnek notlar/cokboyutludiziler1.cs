@@ -1,0 +1,24 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+Console.WriteLine("a satırını giriniz:");
+    int a=Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("b sütununu giriniz:");
+    int b=Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("--------------------");
+    Random rnd=new Random();
+
+    int[,] dizi = new int[a, b];
+     for(int i=0; i<a; i++)
+    {
+        for(int j=0; j<b; j++)
+        {
+            dizi[i,j]=rnd.Next(0,50);
+            Console.WriteLine(dizi[i,j]+"-");
+        }
+    }
+    Console.WriteLine();
+    Console.ReadKey();
+  }
+}

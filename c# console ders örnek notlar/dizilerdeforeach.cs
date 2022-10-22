@@ -1,0 +1,16 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+    string [] bilgi={"ismet","ali","mehmet","muhammed"};
+    for(int i=0; i<bilgi.Length; i++)
+    {
+        Console.WriteLine(bilgi[i]);
+    }
+    foreach(string aktarma in bilgi)
+    {
+        Console.WriteLine(aktarma);
+    }
+    Console.ReadKey();
+  }
+}

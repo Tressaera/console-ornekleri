@@ -1,0 +1,15 @@
+       int[][]duzensizdizi=new int[2][]
+            {
+                new int[3]{2,3,5},
+                new int[4]{1,3,6,7},
+            };
+            Console.WriteLine(duzensizdizi[0][0]);
+            Console.WriteLine(duzensizdizi[0][1]);
+            Console.WriteLine(duzensizdizi[0][2]);
+            Console.WriteLine(duzensizdizi[1][0]);
+            Console.WriteLine(duzensizdizi[1][1]);
+            Console.WriteLine(duzensizdizi[1][2]);
+            Console.WriteLine(duzensizdizi[1][3]);
+
+
+            Console.ReadKey();

@@ -1,0 +1,4 @@
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matriskod\matriskod\bin\Debug\matriskod.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matriskod\matriskod\bin\Debug\matriskod.pdb
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matriskod\matriskod\obj\x86\Debug\matriskod.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matriskod\matriskod\obj\x86\Debug\matriskod.pdb

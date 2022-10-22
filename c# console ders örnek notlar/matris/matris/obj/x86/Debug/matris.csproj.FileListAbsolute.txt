@@ -1,0 +1,8 @@
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matris\matris\bin\Debug\matris.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matris\matris\bin\Debug\matris.pdb
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matris\matris\obj\x86\Debug\matris.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\matris\matris\obj\x86\Debug\matris.pdb
+F:\nesne tabanlı programlama\c# console ders örnek notlar\matris\matris\obj\x86\Debug\matris.exe
+F:\nesne tabanlı programlama\c# console ders örnek notlar\matris\matris\obj\x86\Debug\matris.pdb
+F:\nesne tabanlı programlama\c# console ders örnek notlar\matris\matris\bin\Debug\matris.exe
+F:\nesne tabanlı programlama\c# console ders örnek notlar\matris\matris\bin\Debug\matris.pdb

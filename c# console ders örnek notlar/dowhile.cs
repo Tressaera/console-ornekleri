@@ -1,0 +1,35 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+    
+     bool devamlılık=false;
+     do{
+         Console.WriteLine("Bir doğal sayı giriniz:");
+         int s=Convert.ToInt32(Console.ReadLine());
+         
+         int i=1;
+         int sonuc=1;
+         
+         while(i<=s)
+         {
+             sonuc*=i;
+             i++;
+         }
+         Console.WriteLine("Sonucumuz={0}",sonuc);
+         
+         Console.WriteLine("Devam etmek için 'E':");
+         char durum=Convert.ToChar(Console.ReadLine());
+         if(durum=='E'||durum=='e')
+         {
+             devamlılık=true;
+         }
+         else{
+             devamlılık=false;
+         }
+     }while(devamlılık);
+    
+     
+     Console.ReadKey();
+  }
+}

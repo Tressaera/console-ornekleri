@@ -1,0 +1,204 @@
+                                                                       MATRİS KODLAMA
+MATRİS 1:
+static void Main(string[] args)
+        {
+            int i, j, k, r1, c1, r2, c2, sum = 0;
+
+            int[,] arr1 = new int[50, 50];
+            int[,] brr1 = new int[50, 50];
+            int[,] crr1 = new int[50, 50];
+
+            Console.Write("\n\n İki Matrisin Çarpımı \n ");
+            Console.Write("--------------------------\n");
+
+            Console.Write("nİlk Matrisin satır ve sütun sayısını giriniz :\n");
+            Console.Write("Satırlar:");
+            r1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sütunlar:");
+            c1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("\nİkinci Matrisin satır ve sütun sayısını giriniz :\n");
+            Console.Write("Satırlar:");
+            r2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sütunlar:");
+            c2 = Convert.ToInt32(Console.ReadLine());
+
+            if (c1 != r2)
+            {
+                Console.Write("Matris Çarpımı Mümkün Değil");
+                Console.Write("\nİlk matrisin sütunu ve ikinci matrisin satırı aynı olmalıdır.");
+            }
+            else
+            {
+                Console.Write("İlk Matristeki Değerler:\n");
+                for (i = 0; i < r1; i++)
+                {
+                    for (j = 0; j < c1; j++)
+                    {
+                        Console.Write("element[{0},{1}]:", i, j);
+                        arr1[i, j] = Convert.ToInt32(Console.ReadLine());
+                    }
+
+                }
+                Console.Write("İkinci Matristeki Değerler:\n");
+                for (i = 0; i < r2; i++)
+                {
+                    for (j = 0; j < c2; j++)
+                    {
+                        Console.Write("element[{0},{1}]:", i, j);
+                        brr1[i, j] = Convert.ToInt32(Console.ReadLine());
+                    }
+                }
+                Console.Write("\nİlk Matris:\n");
+                for (i = 0; i < r1; i++)
+                {
+                    Console.Write("\n");
+                    for (j = 0; j < c1; j++)
+                    {
+                        Console.Write("{0}\t", arr1[i, j]);
+                    }
+                }
+                Console.Write("\nİkinci Matris:\n");
+                for (i = 0; i < r2; i++)
+                {
+                    Console.Write("\n");
+                    for (j = 0; j < c2; j++)
+                    {
+                        Console.Write("{0}\t", brr1[i, j]);
+                    }
+                }
+                //Matrisin çarpımı
+                for (i = 0; i < r1; i++)
+                    for (j = 0; j < c2; j++)
+                        crr1[i, j] = 0;
+
+                for (i = 0; i < r1; i++)
+                    for (j = 0; j < c2; j++)
+                        crr1[i, j] = 0;
+                for (i = 0; i < r1; i++)//Birinci matrisin satırı
+                {
+                    for (j = 0; j < c2; j++)//İkinci matrisin kolonu
+                    {
+                        sum = 0;
+                        for (k = 0; k < c1; k++)
+                            sum = sum + arr1[i, k] * brr1[k, j];
+                        crr1[i, j] = sum;
+                    }
+                }
+                Console.Write("İki matrisin çarpımı:\n");
+                for (i = 0; i < r1; i++)
+                {
+                    Console.Write("\n");
+                    for (j = 0; j < c2; j++)
+                    {
+                        Console.Write("{0}\t", crr1[i, j]);
+                    }
+                }
+            }
+            Console.Write("\n\n");
+        }
+    }
+}
+
+<=================================================================================>
+
+MATRİS 2:
+static void Main(string[] args)
+        {
+            int m = 2, n = 3, p = 3, q = 3, i, j;
+            int[,] a = { { 1, 4, 2 }, { 2, 5, 1 } };
+            int[,] b = { { 1, 4, 2 }, { 2, 5, 1 }, { 1, 2, 1 } };
+            {
+                int[,] c = new int[m, q];
+                for (i = 0; i < m; i++)
+                {
+                    for (j = 0; j < q; j++)
+                    {
+                        c[i, j] = 0;
+                        for (int k = 0; k < n; k++)
+                        {
+                            c[i, j] += a[i, k] * b[k, j];
+                        }
+                    }
+                }
+                Console.WriteLine("İki Matrisin Çarpımı");
+                for (i = 0; i < m; i++)
+                {
+                    for (j = 0; j < n; j++)
+                    {
+                        Console.Write(c[i, j] + "\t");
+                    }
+                    Console.WriteLine();
+                }
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+<=================================================================================>
+
+MATRİS 3:
+
+static void Main(string[] args)
+        {
+            int i, j, n;
+            int[,] arr1 = new int[50, 50];
+            int[,] brr1 = new int[50, 50];
+            int[,] crr1 = new int[50, 50];
+            Console.Write("n\nİki Matrisin Toplanması:\n");
+            Console.Write("----------------------------------\n");
+            Console.Write("Kare matrisin boyutunu girin(5'ten küçük):");
+            n = Convert.ToInt32(Console.ReadLine());
+            /*Dizide saklanan değerler*/
+
+            Console.Write("İlk matristeki giriş değerleri:\n");
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                  Console.Write("element -[{0},{1}]:",i,j);
+                  arr1[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            Console.Write("İkinci matristeki giriş değerleri:\n");
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n; j++)
+                {
+                    Console.Write("element -[{0},{1}]:", i, j);
+                    brr1[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.Write("İlk Matris:\n");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("\n");
+                for (j = 0; j < n; j++)
+                Console.Write("{0}\t", arr1[i, j]);
+            }
+            Console.Write("İkinci Matris:\n");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("\n");
+                for (j = 0; j < n; j++)
+                    Console.Write("{0}\t", arr1[i, j]);
+            }
+            /*Matris toplamının hesaplanması*/
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("\n");
+                for (j = 0; j < n; j++)
+                    Console.Write("{0}\t", crr1[i, j]);
+            }
+            Console.Write("\n\n");
+            }
+    }
+}
+ <=================================================================================>
+
+ MATRİS 4:
+
+      
+

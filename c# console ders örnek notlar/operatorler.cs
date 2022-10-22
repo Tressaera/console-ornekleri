@@ -1,0 +1,61 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+    //operatörler
+    
+    //aritmetik operatörler(+ - * /)    
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("Aritmetik Operatörler");
+    int sayi1=10;
+    int sayi2=5;
+    Console.WriteLine("1.sayı="+sayi1);
+    Console.WriteLine("2.sayı="+sayi2);
+    Console.WriteLine("+ operatörü="+(sayi1+sayi2));
+    Console.WriteLine("- operatörü="+(sayi1-sayi2));
+    Console.WriteLine("* operatörü="+(sayi1*sayi2));
+    Console.WriteLine("/ operatörü="+(sayi1/sayi2));
+    
+    //atama operatörleri(=,+=,-=,*=,/=,++,--)
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("Atama Operatörleri");
+    int sayi3=30;//operatörün sağ taraftaki değeri sol değişkene atar.
+    sayi3+=5;
+    Console.WriteLine("+= Operatörü:"+sayi3);
+    sayi3-=10;
+    Console.WriteLine("-= Operatörü:"+sayi3);
+    sayi3*=15;
+    Console.WriteLine("*= Operatörü:"+sayi3);
+    sayi3/=20;
+    Console.WriteLine("/= Operatörü:"+sayi3);
+    sayi3++;
+    Console.WriteLine("++ Operatörü:"+sayi3);
+    sayi3--;
+    Console.WriteLine("-- Operatörü:"+sayi3);
+    
+    //mantıksal operatörleri(&&,||,!)
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("Mantıksal Operatörler");
+    Console.WriteLine(true&&true);
+    Console.WriteLine(true&&false);
+    Console.WriteLine(false&&true);
+    Console.WriteLine(false&&false);
+    Console.WriteLine("-----------------------");
+    Console.WriteLine(true||true);
+    Console.WriteLine(true||false);
+    Console.WriteLine(false||true);
+    Console.WriteLine(false||false);
+    
+    //karşılaştırma operatörleri(==,!=,<=,>=)
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("Karşılaştırma Operatörleri");
+    Console.WriteLine("== Operatörleri"+(sayi1==sayi2));
+    Console.WriteLine("!= Operatörleri"+(sayi1!=sayi2));
+    Console.WriteLine("<= Operatörleri"+(sayi1<=sayi2));
+    Console.WriteLine(">= Operatörleri"+(sayi1>=sayi2));
+    
+    
+    
+    Console.ReadKey();
+  }
+}

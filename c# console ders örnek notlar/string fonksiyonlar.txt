@@ -1,0 +1,28 @@
+Console.WriteLine("String Fonksiyonlar");
+    string adi="Mert";
+    Console.WriteLine(adi);
+    Console.WriteLine("---------------------------");
+    string bolum="Bilgisayar Programcılığı";
+    Console.WriteLine("Metnin uzunluğu:"+bolum.Length);
+    Console.WriteLine("---------------------------");
+    string ads="Mert Yılmaz";
+    Console.WriteLine(ads.ToUpper());//adın büyük yazılan hali
+    Console.WriteLine(ads.ToLower());//adın küçük yazılan hali
+    Console.WriteLine("---------------------------");
+    string ad="Mert";
+    string soyad="Yılmaz";
+    string isim=ad + soyad;
+    Console.WriteLine(isim);
+    Console.WriteLine("---------------------------");
+    string adc="Mert";
+    string soyads="Yılmaz";
+    string isims=string.Concat(adc,soyads);
+    Console.WriteLine(isims);
+    Console.WriteLine("---------------------------");
+    string ada="Mert";
+    string soyada="Yılmaz";
+    string isimt=$"Tam ismim:{ada} {soyada}";
+    Console.WriteLine(isimt);
+    Console.WriteLine("---------------------------");
+    string xString="Merhaba";
+    Console.WriteLine(xString[0]);

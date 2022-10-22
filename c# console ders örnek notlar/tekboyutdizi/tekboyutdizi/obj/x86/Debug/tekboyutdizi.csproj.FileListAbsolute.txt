@@ -1,0 +1,4 @@
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\tekboyutdizi\tekboyutdizi\bin\Debug\tekboyutdizi.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\tekboyutdizi\tekboyutdizi\bin\Debug\tekboyutdizi.pdb
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\tekboyutdizi\tekboyutdizi\obj\x86\Debug\tekboyutdizi.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\tekboyutdizi\tekboyutdizi\obj\x86\Debug\tekboyutdizi.pdb

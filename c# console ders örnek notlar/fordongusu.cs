@@ -1,0 +1,16 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+   Console.WriteLine("Bir Doğal Sayı Giriniz:");
+   int N=Convert.ToInt32(Console.ReadLine());
+   int sonuc=1;
+   
+   for(int i=1; i<=N; i++)
+   {
+       sonuc=sonuc*i;
+   }
+   Console.WriteLine(sonuc);
+   Console.ReadLine();
+  }
+}

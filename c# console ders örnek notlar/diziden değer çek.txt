@@ -1,0 +1,6 @@
+        string[,] sehirler = {{"Turkiye", "Istanbul"}, {"Malezya", "Kuala Lumpur"}, 
+          {"Kazakistan", "Astana"}};
+          for (int i = 0; i < 3; i++)
+          {
+              Console.WriteLine("Ülke: " + sehirler[i, 0] + " Şehir: " + sehirler[i, 1]);
+          }

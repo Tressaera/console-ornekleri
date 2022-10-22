@@ -1,0 +1,35 @@
+
+using System;
+class HelloWorld {
+  static void Main() {
+    int nem,ruzgar,sicaklik;
+    Console.WriteLine("Nem Giriniz:");
+    nem=Int32.Parse(Console.ReadLine());
+    Console.WriteLine("Rüzgar Giriniz:");
+    ruzgar=Int32.Parse(Console.ReadLine());
+    Console.WriteLine("Sıcaklık Giriniz:");
+    sicaklik=Int32.Parse(Console.ReadLine());
+    
+    if (nem < 20) 
+    {
+    if (sicaklik <= 0) {
+        Console.WriteLine("Soğuk ve kuru bir gün.");
+    if (ruzgar < 10) {
+    Console.WriteLine("Ne güzel ki rüzgar yok");
+    } 
+    }
+    else {
+    Console.WriteLine("nem düşük ve 0 dan yüksek");
+    }
+    }
+    else if (nem < 60) {
+    if (sicaklik <= 0) {
+    Console.WriteLine("soguk ve orta nemli.");
+    }
+    else
+    Console.WriteLine("0'dan büyük, orta nem oranı.");
+    }
+    Console.WriteLine("Nem:{0} Sıcaklık:{1} Rüzgar:{2}",nem,sicaklik,ruzgar);
+    Console.ReadKey();
+  }
+}

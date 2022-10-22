@@ -1,0 +1,4 @@
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metotornek\metotornek\bin\Debug\metotornek.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metotornek\metotornek\bin\Debug\metotornek.pdb
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metotornek\metotornek\obj\x86\Debug\metotornek.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metotornek\metotornek\obj\x86\Debug\metotornek.pdb

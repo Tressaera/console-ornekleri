@@ -1,0 +1,21 @@
+   Console.Write("Satır sayısını gir:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sütun sayısını gir:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("============");
+            Random rnd = new Random();
+            //Baş Kısım
+            int[,] dizi=new int[a,b];
+            for (int i = 0; i < a; i++)
+            {
+                for (int j = 0; j < b; j++)
+                {
+                    dizi[i, j] = rnd.Next(0, 50);
+                    Console.WriteLine(dizi[i, j] + "-");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+            }
+        }
+    }

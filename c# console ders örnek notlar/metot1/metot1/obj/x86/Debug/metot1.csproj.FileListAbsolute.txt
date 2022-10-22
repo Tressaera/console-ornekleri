@@ -1,0 +1,4 @@
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metot1\metot1\bin\Debug\metot1.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metot1\metot1\bin\Debug\metot1.pdb
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metot1\metot1\obj\x86\Debug\metot1.exe
+C:\Users\ebruy\Desktop\her şey\c# console ders örnek notlar\metot1\metot1\obj\x86\Debug\metot1.pdb

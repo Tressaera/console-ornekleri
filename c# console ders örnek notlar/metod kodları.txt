@@ -1,0 +1,184 @@
+                                                                                          METOD KODLARI 
+                                                          METOD 1
+ static double hacimhesapla(double r, double h)
+        {
+            double hacim;
+            hacim = Math.PI * r * r * h;
+            return hacim;
+        }
+        static void Main(string[] args)
+        {
+            double yaricapi, yukseklik, hacim;
+            Console.Write("Lütfen silindirin yarıçapını giriniz:");
+            yaricapi = double.Parse(Console.ReadLine());
+            Console.Write("Lütfen silindirin yüksekliğini giriniz");
+            yukseklik = double.Parse(Console.ReadLine());
+            hacim = hacimhesapla(yaricapi, yukseklik);
+            Console.Write("Sonuç={0}", hacim);
+            Console.ReadKey();
+<=============================================================================>
+
+                                                               METOD 2
+
+ static double dairealan(double r)
+        {
+            double hesapla;
+            double pi = 3.14;
+            hesapla = pi * r * r;
+            return hesapla;
+        }
+        static double dairecevre(double r)
+        {
+            double hesapla;
+            double pi = 3.14;
+            hesapla = pi * r * r;
+            return hesapla;
+
+        }
+        static void Main(string[] args)
+        {
+            double r;
+            Console.WriteLine("dairenin alanı ve çevresi:");
+            Console.WriteLine("yarıçapı giriniz:");
+            r = double.Parse(Console.ReadLine());
+            Console.WriteLine("dairenin alanı={0}",dairealan(r));
+            Console.WriteLine();
+            Console.WriteLine("dairenin çevresi={0}", dairecevre(r));
+            Console.ReadKey();
+        }
+<=============================================================================>
+                                                                 METOD 3
+
+   static double karekokhesapla(double sayi)
+        {
+            double hesapla;
+            hesapla = Math.Sqrt(sayi);
+            return hesapla;
+
+        }
+        static void Main(string[] args)
+        {
+            int sayi;
+            for (int i = 1; 1 <= 10; i++)
+            {
+                Console.WriteLine("Karekökü alınacak sayıyı giriniz");
+                sayi = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("sayının karekökü={0}",karekokhesapla(sayi);
+            }
+
+<=============================================================================>
+                                                              METOD 4
+
+ static int fiyathesapla(int a,int b)
+     {
+         int hesapla;
+         hesapla=a*b;
+         return hesapla;
+     }
+     static int kdvli(int a,int b)
+     {
+        int hesapla;
+        hesapla=(a*b)+(a*b*18/100);
+        return hesapla;
+     }
+     static void Main(string[] args)
+     {
+            int adet,fiyat;
+            Console.WriteLine("Ürün Fiyatı Hesaplama");
+            Console.WriteLine("ürünün fiyatını giriniz:");
+            fiyat = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ürün sayısını giriniz:");
+            adet = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Kdvsiz fiyatı={0}",fiyathesapla(fiyat,adet));
+            Console.WriteLine();
+            Console.WriteLine("Kdvli fiyatı={0}",kdvli(fiyat,adet));
+            Console.ReadKey();         
+     }        
+<=============================================================================>
+
+                                                            METOD 5
+static int nothesapla(int a, int b, int c)
+        {
+            int hesapla;
+            hesapla = - (a*2/10) + (b*2/10) + (c*6/10);
+            return hesapla;
+        }
+        static int harfnotu(int not)
+        {
+            int harf;
+            harf = not;
+            if((not>=90)&&(not<=100))
+            {
+                Console.WriteLine("Geçme notunuz:AA");
+            }
+            if((not>=85)&&(not<90))
+            {
+                Console.WriteLine("Geçme Notunuz:BA");
+            }
+            if((not>=80)&&(not<85))
+            {
+                Console.WriteLine("Geçme Notunuz:BB");
+            }
+            if((not>=75)&&(not<80))
+            {
+                Console.WriteLine("Geçme Notunuz:CB");
+            }
+             if((not>=70)&&(not<75))
+            {
+                Console.WriteLine("Geçme Notunuz:CC");
+            }
+             if((not>=65)&&(not<70))
+            {
+                Console.WriteLine("Geçme Notunuz:DC");
+            }
+             if((not>=60)&&(not<65))
+            {
+                Console.WriteLine("Geçme Notunuz:DD");
+            }
+             if(not<60)
+            {
+                Console.WriteLine("Kaldınız!");
+            }
+            return harf;
+        }
+
+     static void Main(string[] args)
+     {
+            int vize1,vize2,final,ort;
+            Console.WriteLine("Öğrencilerin 1.vize notunu giriniz:");
+            vize1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Öğrencilerin 2.vize notunu giriniz:");
+            vize2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Öğrencilerin final notunu giriniz:");
+            final = Int32.Parse(Console.ReadLine());
+            Console.WriteLine();
+            ort = nothesapla(vize1, vize2, final);
+            Console.WriteLine("Ders Ortalaması={0}", ort);
+            Console.WriteLine("notunuz={0}", harfnotu(ort));       
+     }
+
+<=============================================================================>
+                                                                               METOD 6
+
+static int toplam(int sayi)
+        {
+            int toplama= 0;
+            toplama += sayi;
+            return toplama;
+        }
+
+     static void Main(string[] args)
+     {
+         int notu, toplama;
+         toplama = 0;
+         int sayac = 0;
+         for (int i = 1; i <= 10; i++)
+         {
+             sayac += 1;
+             Console.WriteLine("Not giriniz:");
+             notu = Int32.Parse(Console.ReadLine());
+             toplama += toplam(notu);
+         }
+         Console.WriteLine("Notların Toplamı={0}", toplama);
+         Console.WriteLine("Notların ortalaması={0}", toplama / sayac);
+     }     
